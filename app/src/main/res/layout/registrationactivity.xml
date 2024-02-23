@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/registerEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:width="300dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerEmail"
+        android:layout_centerHorizontal="true"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:width="300dp" />
+
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:hint="confirm password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:width="300dp" />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/maroon"
+        android:text="Register" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerBtn"
+        android:layout_centerHorizontal="true"
+        android:text="If already registered, "/>
+
+    <TextView
+        android:id="@+id/loginLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerBtn"
+        android:layout_alignRight="@id/registerBtn"
+        android:layout_marginLeft="500dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="-48dp"
+        android:text="Login"
+        android:textColor="@color/blue"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
